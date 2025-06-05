@@ -1,25 +1,25 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
-import LandingPage from "./components/LandingPage";
-import CreateAccount from "./components/CreateAccount";
-import LoginPage from "./components/LoginPage";
-import ProfileView from "./components/ProfileView";
+# Educase Rohit Frontend
 
-function App() {
-  useEffect(() => {
-    document.title = "My React App"; // Sets the tab name
-  }, []);
+This project is a frontend application for Educase Rohit, built using React.
 
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/create-account" element={<CreateAccount />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/profile" element={<ProfileView />} />
-      </Routes>
-    </Router>
-  );
-}
+## Main Routes
 
-export default App;
+| Path         | Description              |
+|--------------|--------------------------|
+| `/`          | Landing page             |
+| `/login`     | User login               |
+| `/register`  | User registration        |
+| `/dashboard` | User dashboard           |
+| `/profile`   | User profile management  |
+| `*`          | 404 page                 |
+
+## About React
+
+This project uses [React](https://react.dev/), a popular JavaScript library for building user interfaces.
+
+## Getting Started
+
+1. Install dependencies:  
+    `npm install`
+2. Start the development server:  
+    `npm start`
