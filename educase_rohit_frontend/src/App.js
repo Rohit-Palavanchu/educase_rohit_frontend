@@ -1,9 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import LandingPage from "./components/LandingPage";
 import CreateAccount from "./components/CreateAccount";
 import LoginPage from "./components/LoginPage";
 import ProfileView from "./components/ProfileView";
+
 function App() {
+  useEffect(() => {
+    document.title = "My React App"; // Sets the tab name
+  }, []);
+
   return (
     <Router>
       <Routes>
